@@ -31,7 +31,7 @@ console.log("There was an error fetching meal info")
 
 
 
-const url = 'https://online-movie-database.p.rapidapi.com/auto-complete?q=game%20of%20thr';
+const url = 'https://online-movie-database.p.rapidapi.com/aut';
 
 const options = {
   method: 'GET',
