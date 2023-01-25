@@ -1,7 +1,9 @@
- let mealThumbnail = document.createElement('img');
- let mealDescription = document.getElementsByClassName("card-title")
- let recipeLink = document.getElementsByClassName("recipe-link")
-
+ 
+ let mealDescription = document.getElementById("mealName");
+ let mealCat = document.getElementById("mealCategory");
+ let mealImage = document.getElementById("mealImg");
+ let mealRecipe = document.getElementById("mealLink");
+ 
 async function randomMeal() {
     try{
    const response = await fetch("https://www.themealdb.com/api/json/v1/1/random.php")
@@ -15,13 +17,19 @@ async function randomMeal() {
     }
     
     console.log(mealInfo)
-     mealThumbnail.src = `${mealInfo.mealImage}`
-     document.getElementsByClassName('card-img-top').appendChild(mealThumbnail)
-     mealDescription.innerHTML = `Meal Name: ${mealInfo.mealName}`
+
     
-}
+     mealImage.innerHTML = `<img src=${mealInfo.mealImage}>`
+     mealDescription.innerHTML = `Meal Name: ${mealInfo.mealName}`
+     mealCat.innerHTML = `Meal Category: ${mealInfo.mealCategory}`
+     mealRecipe.innerHTML= `<a href=${mealInfo.mealInstructions} target="_blank">Recipe</a>`
+
+     
+     
+    
+  }
 catch (error) {
-console.log("There was an error fetching meal info")
+console.log(error)
 }
 }
 

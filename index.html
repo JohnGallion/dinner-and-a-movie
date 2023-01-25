@@ -27,42 +27,49 @@
 </nav>
 
     <h2 class="lucky">If You're Feeling Lucky Get Completely Random</h2>
-    <div class="button1">
-        <button type="submit" id="button" onclick="showCards()">Submit</button>
-    </div>
-      <div id="card1" style="display: none;">
-        <!-- Bootstrap card code here -->
-        div class="row">
-        <div class="col-6">
-          <div class="card">
-
-          <div class="card" style="width: 25rem;"> 
-            <img src="" class="card-img-top" alt="...">
-            <div class="card-body">
-              <p class="card-title"><h5>Meals</h5></p>
-              <p class="card-text">Description</p>
-            </div>
-          </div>
-           </div>
-         </div>
-      </div>
-      <div id="card2" style="display: none;">
-        <!-- Bootstrap card code here -->
-        <div class="col-6">
+    <div id="card-container">
+        <div id="card1" >
+          <!-- Bootstrap card code here -->
+          <div class="row">
+          <div class="col-6">
             <div class="card">
-              
-              <div class="card" style="width: 25rem;">
-                <img src="" class="card-img-top" alt="...">
-                <div class="card-body1">
-                  <p class="card-title-1"><h5> Dish Name </h5></p>
-                  <p class="card-text-1">Description</p>
-              </div>
+
+            <div class="card" > 
+              <div id="mealImg"></div>
+              <div id="mealName"></div>
+              <div id="mealCategory"></div>
+              <div id="mealLink"></div>
+            </div>
             </div>
           </div>
+        </div>
         </div>
         
-        </div>
+          
+          <div id="card2" >
+            <!-- Bootstrap card code here -->
+
+          
+            <div class="col-6">
+                <div class="card">
+                  
+                  <div  id="randomMeal"class="card" >
+                    
+                    <div id="mealName" class="card-body1">
+                      <p class="card-title-1"><h5></h5></p>
+                      <p class="card-text-1"></p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+            </div>
+    </div>
+        <div class="button1">
+          <button type="submit" id="button" onclick="randomMeal()">Submit</button>
+      </div>
       </div>
       
     </body>
+    <script src="/dinner-movie.js"></script>
 </html>
