@@ -1,5 +1,5 @@
 body {
-    background-color:black ;
+  background-color: black ;
   
 }
 
@@ -54,13 +54,24 @@ body {
   width: 100%;
   }
 
+.card {
+  
+    color: #efefef;
+    background-color: #212529;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 10%;
+    padding-bottom: 10%;
+    
+  }
 
 #mealLink {
   padding-bottom: 30px;
   }
 
 #trailer {
-  padding-bottom: 30px;
+  margin-bottom: 30px;
 }
 
 #card-container {
@@ -72,46 +83,56 @@ body {
  
   }
 
-.card {
-  
-  color: #efefef;
-  background-color: #212529;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
 
-}
 
-#mealz {
+/* #mealz {
   padding-top: 10%;
   padding-bottom: 10%;
-}
+} */
 
-#mealText{
-  padding-top: 10%;
-
-}
-
-#card1, #card2 {
-  width: 25%;
-  border-radius: 10%;
-  text-align: center;
-}
-
-#mealName {
+#mealName, #title {
+  font-size: 1.25em;
+  font-weight: bold;
+  margin: 5%;
   text-align: center;
   overflow-wrap: break-word;
 }
 
-#button {
-  color: #efefef;
-  background-color: #212529;
-  margin: 40px;
+#mealText {
+  width: 100%;
+  margin-top: 4em;
+}
+
+#mealCategory {
+  margin: 20px;
+  font-style: italic;
+}
+
+#rank {
+  margin: 10px;
+  font-style: italic;
+}
+
+#year {
+  margin: 10px;
+  font-style: italic;
+}
+
+#card1, #card2 {
+  width: 30%;
   border-radius: 10%;
+  text-align: center;
+}
+
+#button {
+  color: #ffffff;
+  background-color: rgb(180, 22, 22);
+  margin: 40px;
+  border-radius: 12%;
 }
 
 #button:hover{
-  background-color: rgb(172, 21, 21);
+  background-color: rgb(146, 18, 18);
 }
 
 
@@ -119,7 +140,9 @@ img {
   margin: 12.5%;
   width: 75%;
   height: auto;
-  border-radius: 10%;
+  /* border-radius: 10%; */
   }
 
-
+  a:hover {
+    font-size: larger;
+}

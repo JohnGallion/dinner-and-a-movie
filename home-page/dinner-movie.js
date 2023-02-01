@@ -12,6 +12,8 @@ async function randomMeal() {
 
    document.getElementById("card-container").style.visibility = "visible";
    document.getElementById("mealz").style.height = "100%";
+   document.getElementById("mealImg").style.marginTop = "6em";
+
 
 
    let mealInfo = {
@@ -25,8 +27,8 @@ async function randomMeal() {
 
     
      mealImage.innerHTML = `<img src=${mealInfo.mealImage}>`
-     mealDescription.innerHTML = `Meal Name: ${mealInfo.mealName}`
-     mealCat.innerHTML = `Meal Category: ${mealInfo.mealCategory}`
+     mealDescription.innerHTML = `${mealInfo.mealName}`
+     mealCat.innerHTML = `Category:  ${mealInfo.mealCategory}`
      mealRecipe.innerHTML= `<a href=${mealInfo.mealInstructions} target="_blank">Recipe</a>`
 
      
@@ -81,9 +83,9 @@ function randomMovie() {
     console.log(movieInfo)
 
     movieImg.innerHTML = `<img  id ="poster" src=${movieInfo.poster}>`;
-    title.innerHTML = `Title: ${movieInfo.title}`;
+    title.innerHTML = `${movieInfo.title}`;
     rating.innerHTML = `IMBD Rank: ${movieInfo.rank}`;
-    releaseYear.innerHTML = `Realease Year: ${movieInfo.year}`
+    releaseYear.innerHTML = `Realeased: ${movieInfo.year}`
     trailer.innerHTML = `<a href=${movieInfo.trailer} target="_blank">Trailer</a>`
 
   })
