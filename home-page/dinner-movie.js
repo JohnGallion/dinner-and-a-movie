@@ -13,6 +13,8 @@ async function randomMeal() {
    document.getElementById("card-container").style.visibility = "visible";
    document.getElementById("mealz").style.height = "100%";
    document.getElementById("mealImg").style.marginTop = "6em";
+   document.getElementById("lucky").innerHTML = "Here's what we found for you!";
+   document.getElementById("randomize").innerHTML = "Not what you wanted? Click again!";
 
 
 // takes the data from the fetch call and puts it into an object conataining desired info to display on screen

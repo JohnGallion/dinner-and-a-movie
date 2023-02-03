@@ -84,7 +84,14 @@ body {
   
   }
 
-
+#randomize {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  color: white;
+  padding-top: 3%;
+  padding-bottom: 1%;
+}
 
 /* #mealz {
   padding-top: 10%;
