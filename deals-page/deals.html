@@ -11,7 +11,7 @@
     <title>Date Night Deals</title>
 </head>
 <body>
-<!-- Navbar info -- icon, home page link & placeholder text to be filled in later, if necessary. It's reactive with a drop down menu when the screen size is small. -->
+<!-- Navbar info -- icon and links to other pages of the site. It's reactive with a drop down menu when the screen size is small. -->
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
   <a class="navbar-brand" href="/index.html" id="icon"><i data-feather="film" width="30" height="30" class="d-inline-block align-top"></i></a>
   <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
@@ -25,6 +25,8 @@
     </div>
   </div>
 </nav>
+
+<!-- creates section under the navbar -->
 <div class="content-container">
     <main id="content">
         <div id="title">
@@ -33,8 +35,8 @@
         <div id="links">
             <h2>Movie tickets</h2>
             <hr>
-
-            <a class="logo" href="https://www.fandango.com/?cmp=KNC_SP_Google_Main_TM-Fandango_Top+Terms-Exact&gclid=EAIaIQobChMI4cHX3Ynz_AIViYzICh04nwAkEAAYASAAEgKSRfD_BwE&gclsrc=aw.ds" target="_blank" ><img src="/assets/fandango.png" alt="Gandango logo"></a>
+<!-- anchor elements with images -->
+            <a class="logo" href="https://www.fandango.com/?cmp=KNC_SP_Google_Main_TM-Fandango_Top+Terms-Exact&gclid=EAIaIQobChMI4cHX3Ynz_AIViYzICh04nwAkEAAYASAAEgKSRfD_BwE&gclsrc=aw.ds" target="_blank" ><img src="/assets/fandango.png" alt="Fandango logo"></a>
             
             <a class="logo" href="https://www.movietickets.com/" target="_blank"><img src="/assets/mtickets.jpg" alt="movietickets logo"></a>
             <h2>Events</h2>
@@ -44,6 +46,7 @@
             <a class="logo" href="https://gametime.co/" target="_blank"><img src="/assets/gametime.png" alt="game time logo"></a>
             
         </div>
+        <!-- google search bar -->
         <script async src="https://cse.google.com/cse.js?cx=c6d2995849b474826">
         </script>
         <div class="gcse-search"></div>
@@ -51,7 +54,7 @@
 </div>
 
     <script src="/home-page/dinner-movie.js"></script>
-
+<!-- javascript for our Icon -->
     <script>
     feather.replace();
     </script>
