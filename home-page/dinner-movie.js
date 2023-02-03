@@ -12,7 +12,7 @@ async function randomMeal() {
 //once function is called the CSS of these HTML elements is changed
    document.getElementById("card-container").style.visibility = "visible";
    document.getElementById("mealz").style.height = "100%";
-   document.getElementById("mealImg").style.marginTop = "6em";
+   document.getElementById("mealImg").style.marginTop = "3em";
    document.getElementById("lucky").innerHTML = "Here's what we found for you!";
    document.getElementById("randomize").innerHTML = "Not what you wanted? Click again!";
 
@@ -96,3 +96,32 @@ async function randomMovie() {
 	.catch(err => console.error(err));
 }
 
+let mealButtonClicked = false;
+let movieButtonClicked = false;
+
+function mealButtonLock () {
+  mealButtonClicked = true;
+  console.log(mealButtonClicked)
+}
+
+function movieButtonLock () {
+  movieButtonClicked = true;
+  console.log(movieButtonClicked)
+}
+
+function randomize () {
+  if (mealButtonClicked == false && movieButtonClicked == false) {
+    randomMovie();
+    randomMeal();
+    console.log("Both functions will run!")
+  } else if (mealButtonClicked == false && movieButtonClicked == true) {
+    randomMeal();
+    console.log("Only the meal function will run ")
+  } else if (mealButtonClicked == true && movieButtonClicked == false) {
+    randomMovie();
+    console.log("Only the movie function will run")
+  } else if (mealButtonClicked == true && movieButtonClicked == true) {
+    console.log("Neither will run.")
+  }
+
+}
