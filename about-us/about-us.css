@@ -22,10 +22,10 @@ html {
 
 
 .card {
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.817);
     margin: 8px;
     padding: 16px;
-    text-align: center;
+    text-align: left;
 }
 
 .about-us {
@@ -54,7 +54,7 @@ a {
 }
 
 .title {
-    color: rgba(37, 56, 163, 0.514);
+    color: rgba(233, 49, 64, 0.934);
 }
 
 .button {
