@@ -68,6 +68,15 @@ body {
     box-shadow: 5px 5px 10px 2px rgba(0,0,0,.8);
   }
 
+.refresh {
+  border: none;
+  border-radius: 50%;
+}
+
+.refresh:hover {
+    transform:scale(1.2)
+}
+
 #mealLink {
   padding-bottom: 30px;
   }
@@ -139,6 +148,7 @@ body {
   box-shadow: 5px 5px 10px 2px rgba(0,0,0,.8);
   margin: 40px;
   border-radius: 12%;
+  animation: float 5s infinite;
 }
 
 #button:hover{
