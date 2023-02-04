@@ -14,6 +14,32 @@ html {
     box-sizing: inherit;
 }
 
+.nav {
+    display: inline;
+    text-align: center;
+    width: 100%;
+    margin-top: 50px;
+}
+
+h2 {
+    margin-top: 30px;
+}
+
+.nav-item {
+    margin: auto;
+    font-size: 15px;
+    color: grey;
+}
+
+a:hover {
+    font-size: medium;
+}
+
+.fa {
+    margin-bottom: 10px;
+
+}
+
 .columns {
     float: left;
     width: 33.3%;
