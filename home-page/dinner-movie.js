@@ -96,32 +96,32 @@ async function randomMovie() {
 	.catch(err => console.error(err));
 }
 
-let mealButtonClicked = false;
-let movieButtonClicked = false;
+// let mealButtonClicked = false;
+// let movieButtonClicked = false;
 
-function mealButtonLock () {
-  mealButtonClicked = true;
-  console.log(mealButtonClicked)
-}
+// function mealButtonLock () {
+//   mealButtonClicked = true;
+//   console.log(mealButtonClicked)
+// }
 
-function movieButtonLock () {
-  movieButtonClicked = true;
-  console.log(movieButtonClicked)
-}
+// function movieButtonLock () {
+//   movieButtonClicked = true;
+//   console.log(movieButtonClicked)
+// }
 
-function randomize () {
-  if (mealButtonClicked == false && movieButtonClicked == false) {
-    randomMovie();
-    randomMeal();
-    console.log("Both functions will run!")
-  } else if (mealButtonClicked == false && movieButtonClicked == true) {
-    randomMeal();
-    console.log("Only the meal function will run ")
-  } else if (mealButtonClicked == true && movieButtonClicked == false) {
-    randomMovie();
-    console.log("Only the movie function will run")
-  } else if (mealButtonClicked == true && movieButtonClicked == true) {
-    console.log("Neither will run.")
-  }
+// function randomize () {
+//   if (mealButtonClicked == false && movieButtonClicked == false) {
+//     randomMovie();
+//     randomMeal();
+//     console.log("Both functions will run!")
+//   } else if (mealButtonClicked == false && movieButtonClicked == true) {
+//     randomMeal();
+//     console.log("Only the meal function will run ")
+//   } else if (mealButtonClicked == true && movieButtonClicked == false) {
+//     randomMovie();
+//     console.log("Only the movie function will run")
+//   } else if (mealButtonClicked == true && movieButtonClicked == true) {
+//     console.log("Neither will run.")
+//   }
 
-}
+// }

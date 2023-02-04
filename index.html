@@ -36,11 +36,14 @@
           <!-- Bootstrap card code here -->
          
             <div id="mealz" class="card">
-              <div><p>Lock & Save:</p></div>
+              <button class="refresh" onclick="randomMeal()">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-refresh-cw"><polyline points="23 4 23 10 17 10"></polyline><polyline points="1 20 1 14 7 14"></polyline><path d="M3.51 9a9 9 0 0 1 14.85-3.36L23 10M1 14l4.64 4.36A9 9 0 0 0 20.49 15"></path></svg>
+              </button>
+              <!-- <div><p>Lock & Save:</p></div>
                 <label class="switch" onclick="mealButtonLock()" disabled="disabled">
                   <input type="checkbox">
                   <span class="slider round"></span>
-                </label>
+                </label> -->
               <div class="card-img-top" id="mealImg"></div>
               <div id="mealText">
               <div id="mealName"></div>
@@ -56,11 +59,14 @@
             <!-- Bootstrap card code here -->
       
                 <div class="card" > 
-                  <div><p>Lock & Save:</p></div>
+                  <button class="refresh" onclick="randomMovie()">
+                    <svg onclick="" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-refresh-cw"><polyline points="23 4 23 10 17 10"></polyline><polyline points="1 20 1 14 7 14"></polyline><path d="M3.51 9a9 9 0 0 1 14.85-3.36L23 10M1 14l4.64 4.36A9 9 0 0 0 20.49 15"></path></svg>
+                   </button>
+                  <!-- <div><p>Lock & Save:</p></div>
                   <label class="switch" onclick="movieButtonLock()">
                     <input type="checkbox">
-                    <span class="slider round"></span>
-                  </label>
+                    <span class="slider round"></span> 
+                  </label> -->
                   <div class="card-img-top" id="movieImage"></div>
                   <div id="title"></div>
                   <div id="rank"></div>
@@ -78,7 +84,7 @@
       </div>
 
       <div class="button1">
-          <button type="submit" id="button" onclick="randomize()">Randomize</button>
+          <button type="submit" id="button" onclick="randomMeal();randomMovie()">Randomize</button>
       </div>
       </div>
       <script src="/home-page/dinner-movie.js"></script>
