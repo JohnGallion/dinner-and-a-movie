@@ -76,3 +76,9 @@ img:hover {
     opacity: .5;
     transform:scale(1.2) ;
 }
+
+@media only screen and (max-width: 600px) {
+    #content {
+        width: 100%;
+    }
+}
