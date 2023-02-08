@@ -65,9 +65,9 @@ a:hover {
 
 .info-container {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.817);
-    margin: 8px;
+     margin: 8px; 
     padding: 16px;
-    text-align: left;
+    text-align: center;
 }
 
 .about-us {
@@ -97,6 +97,11 @@ a {
 
 .title {
     color: rgba(233, 49, 64, 0.934);
+}
+
+button {
+    border: none;
+    background-color: whitesmoke;
 }
 
 .button {
@@ -133,14 +138,15 @@ a {
     .content {
         display: flex;
         flex-direction: column;
-        
+        align-content: center;
     }
 
 
     .links {
         background-color: whitesmoke;
         border: none;
-        margin: 5%;
+        margin-top: 5%;
+        margin-bottom: 5%;
         width: 100%;
     }
   }
